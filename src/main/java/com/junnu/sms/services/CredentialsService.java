@@ -17,7 +17,11 @@ public class CredentialsService {
     public String doUserExist(Credentials c){
         String result = "default message";
         String id = c.getUsername();
+        String idExtension = id.split("@")[1];  
         Optional<Credentials> user =  repo.findById(id);
+        if(!idExtension.equals("gritcollege.com")){
+            return "use your official mail id please";
+        }
         if(user.isPresent()){
             if(!(user.get().getPassword().equals(c.getPassword()))){
                 result = "wrong password buddy try again";    
