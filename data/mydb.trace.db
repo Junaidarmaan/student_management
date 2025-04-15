@@ -1,0 +1,57 @@
+2025-04-15 18:27:48.546318+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table credentials ([*]user varchar(255) not null, password varchar(255), primary key (user))"; expected "identifier"; SQL statement:
+create table credentials (user varchar(255) not null, password varchar(255), primary key (user)) [42001-232]
+2025-04-15 18:42:09.211632+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table credentials ([*]user varchar(255) not null, password varchar(255), primary key (user))"; expected "identifier"; SQL statement:
+create table credentials (user varchar(255) not null, password varchar(255), primary key (user)) [42001-232]
+2025-04-15 18:44:37.667440+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table credentials ([*]user varchar(255) not null, password varchar(255), primary key (user))"; expected "identifier"; SQL statement:
+create table credentials (user varchar(255) not null, password varchar(255), primary key (user)) [42001-232]
+2025-04-15 18:46:16.612553+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table credentials ([*]user varchar(255) not null, password varchar(255), primary key (user))"; expected "identifier"; SQL statement:
+create table credentials (user varchar(255) not null, password varchar(255), primary key (user)) [42001-232]
+2025-04-15 18:49:46.356506+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c1_0.[*]user,c1_0.password from credentials c1_0 where c1_0.user=?"; expected "identifier"; SQL statement:
+select c1_0.user,c1_0.password from credentials c1_0 where c1_0.user=? [42001-232]
+2025-04-15 18:51:16.490281+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table credentials ([*]user varchar(255) not null, password varchar(255), primary key (user))"; expected "identifier"; SQL statement:
+create table credentials (user varchar(255) not null, password varchar(255), primary key (user)) [42001-232]
+2025-04-15 18:51:20.108980+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table credentials ([*]user varchar(255) not null, password varchar(255), primary key (user))"; expected "identifier"; SQL statement:
+create table credentials (user varchar(255) not null, password varchar(255), primary key (user)) [42001-232]
+2025-04-15 18:51:23.048701+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c1_0.[*]user,c1_0.password from credentials c1_0 where c1_0.user=?"; expected "identifier"; SQL statement:
+select c1_0.user,c1_0.password from credentials c1_0 where c1_0.user=? [42001-232]
+2025-04-15 18:51:24.424736+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c1_0.[*]user,c1_0.password from credentials c1_0 where c1_0.user=?"; expected "identifier"; SQL statement:
+select c1_0.user,c1_0.password from credentials c1_0 where c1_0.user=? [42001-232]
+2025-04-15 18:51:25.391532+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c1_0.[*]user,c1_0.password from credentials c1_0 where c1_0.user=?"; expected "identifier"; SQL statement:
+select c1_0.user,c1_0.password from credentials c1_0 where c1_0.user=? [42001-232]
+2025-04-15 18:51:25.749422+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c1_0.[*]user,c1_0.password from credentials c1_0 where c1_0.user=?"; expected "identifier"; SQL statement:
+select c1_0.user,c1_0.password from credentials c1_0 where c1_0.user=? [42001-232]
+2025-04-15 18:51:26.123410+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c1_0.[*]user,c1_0.password from credentials c1_0 where c1_0.user=?"; expected "identifier"; SQL statement:
+select c1_0.user,c1_0.password from credentials c1_0 where c1_0.user=? [42001-232]
+2025-04-15 18:51:28.732584+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c1_0.[*]user,c1_0.password from credentials c1_0 where c1_0.user=?"; expected "identifier"; SQL statement:
+select c1_0.user,c1_0.password from credentials c1_0 where c1_0.user=? [42001-232]
+2025-04-15 18:51:29.547110+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c1_0.[*]user,c1_0.password from credentials c1_0 where c1_0.user=?"; expected "identifier"; SQL statement:
+select c1_0.user,c1_0.password from credentials c1_0 where c1_0.user=? [42001-232]
+2025-04-15 18:51:29.917716+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c1_0.[*]user,c1_0.password from credentials c1_0 where c1_0.user=?"; expected "identifier"; SQL statement:
+select c1_0.user,c1_0.password from credentials c1_0 where c1_0.user=? [42001-232]
+2025-04-15 18:51:30.257085+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c1_0.[*]user,c1_0.password from credentials c1_0 where c1_0.user=?"; expected "identifier"; SQL statement:
+select c1_0.user,c1_0.password from credentials c1_0 where c1_0.user=? [42001-232]
+2025-04-15 18:51:30.598511+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c1_0.[*]user,c1_0.password from credentials c1_0 where c1_0.user=?"; expected "identifier"; SQL statement:
+select c1_0.user,c1_0.password from credentials c1_0 where c1_0.user=? [42001-232]
+2025-04-15 18:51:30.958595+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c1_0.[*]user,c1_0.password from credentials c1_0 where c1_0.user=?"; expected "identifier"; SQL statement:
+select c1_0.user,c1_0.password from credentials c1_0 where c1_0.user=? [42001-232]
+2025-04-15 18:52:09.757818+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select c1_0.[*]user,c1_0.password from credentials c1_0 where c1_0.user=?"; expected "identifier"; SQL statement:
+select c1_0.user,c1_0.password from credentials c1_0 where c1_0.user=? [42001-232]
