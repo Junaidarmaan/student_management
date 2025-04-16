@@ -13,7 +13,8 @@ import com.junnu.sms.repos.CredentialsRepo;
 public class CredentialsService {
     @Autowired
     CredentialsRepo repo;
-    
+    @Autowired
+    StudentService sr;
     public String doUserExist(Credentials c){
         String result = "default message";
         String id = c.getUsername();
@@ -31,6 +32,7 @@ public class CredentialsService {
         }else{
             repo.save(c);
             result = "new user successfully created";
+            sr.addStudent(id.split("@")[0]);
         }
         return result;
     }
