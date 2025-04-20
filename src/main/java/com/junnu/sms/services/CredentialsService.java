@@ -17,10 +17,11 @@ public class CredentialsService {
     StudentService sr;
     public String doUserExist(Credentials c){
         String result = "default message";
-        String id = c.getUsername();
-        String idExtension = id.split("@")[1];  
+        String id = extractId(c.getUsername());
+        String idExtension = c.getUsername().split("@")[1]; 
+         
         Optional<Credentials> user =  repo.findById(id);
-        if(!idExtension.equals("gritcollege.com")){
+        if(!idExtension.equals("grietcollege.com")){
             return "use your official mail id please";
         }
         if(user.isPresent()){
@@ -32,8 +33,15 @@ public class CredentialsService {
         }else{
             repo.save(c);
             result = "new user successfully created";
-            sr.addStudent(id.split("@")[0]);
+            sr.addStudent(id);
         }
         return result;
+    }
+
+    public static String extractId(String id){
+        String idExtension = id.split("@")[0]; 
+        int index = idExtension.length() - 10;
+        //junnu1234567890
+        return idExtension.substring(index);
     }
 }

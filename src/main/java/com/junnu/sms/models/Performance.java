@@ -1,6 +1,9 @@
 package com.junnu.sms.models;
 
 
+import java.util.Map;
+
+import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
@@ -8,39 +11,25 @@ import jakarta.persistence.Id;
 public class Performance {
     @Id
     String rollNo = "user@gritcollege.com";
-    String subject1  = "not known yet";
-    String subject2  = "not known yet";
-    String subject3 = "not known yet";
-    int attendance  = 0;
+    @ElementCollection
+    Map<String,Integer> marks;
+    float attendance  = 0;
     public String getRollNo() {
         return rollNo;
     }
     public void setRollNo(String rollNo) {
         this.rollNo = rollNo;
     }
-    public String getSubject1() {
-        return subject1;
+    public Map<String, Integer> getMarks() {
+        return marks;
     }
-    public void setSubject1(String subject1) {
-        this.subject1 = subject1;
+    public void setMarks(Map<String, Integer> marks) {
+        this.marks = marks;
     }
-    public String getSubject2() {
-        return subject2;
-    }
-    public void setSubject2(String subject2) {
-        this.subject2 = subject2;
-    }
-    public String getSubject3() {
-        return subject3;
-    }
-    public void setSubject3(String subject3) {
-        this.subject3 = subject3;
-    }
-    public int getAttendance() {
+    public float getAttendance() {
         return attendance;
     }
-    public void setAttendance(int attendance) {
+    public void setAttendance(float attendance) {
         this.attendance = attendance;
     }
-    
 }
