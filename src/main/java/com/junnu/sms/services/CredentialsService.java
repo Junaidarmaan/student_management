@@ -15,6 +15,8 @@ public class CredentialsService {
     CredentialsRepo repo;
     @Autowired
     StudentService sr;
+    @Autowired
+    EmailService email;
     public String doUserExist(Credentials c){
         String result = "default message";
         String id = extractId(c.getUsername());
@@ -33,12 +35,13 @@ public class CredentialsService {
         }else{
             repo.save(c);
             result = "new user successfully created";
-            sr.addStudent(id);
+            sr.addStudent(id,c.getUsername());
+            email.sendEmail("junnubest@gmail.com", String.format("a new user has been created with mail id %s", c.getUsername()));
         }
         return result;
     }
 
-    public static String extractId(String id){
+    public  String extractId(String id){
         String idExtension = id.split("@")[0]; 
         int index = idExtension.length() - 10;
         //junnu1234567890

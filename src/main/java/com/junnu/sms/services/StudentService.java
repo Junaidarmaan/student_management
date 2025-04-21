@@ -1,5 +1,6 @@
 package com.junnu.sms.services;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,9 +25,10 @@ public class StudentService {
         return performance.findAll();
     }
 
-    public void addStudent(String roll){
+    public void addStudent(String roll,String emailString){
         Student temp = new Student();
         temp.setRollNo(roll);
+        temp.setMailId(emailString);
         repo.save(temp);
         System.out.println("student added to table student with roll " + roll);
         Performance p = new Performance();
@@ -46,7 +48,15 @@ public class StudentService {
         return result;
 
     }
+    public List<String> getAllStudentsMails(){
+        List<Student> myList = getAllStudents();
+        List<String> allMails = new ArrayList<>();
+        for(Student student : myList){
+            allMails.add(student.getMailId());
+        }
 
+        return allMails;
+    }
     public String updatePerformance(Performance p){
         String result = "student doesnt exists";
         Optional<Performance> temp = performance.findById(p.getRollNo());

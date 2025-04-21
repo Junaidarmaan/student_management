@@ -12,6 +12,7 @@ public class Student {
     String academicYear = "unknown";
     String branch = "unknown";
     String mobile = "unknown";
+    String mailId;
     public String getRollNo() {
         return rollNo;
     }
@@ -41,6 +42,12 @@ public class Student {
     }
     public void setAcademicYear(String academicYear) {
         this.academicYear = academicYear;
+    }
+    public String getMailId() {
+        return mailId;
+    }
+    public void setMailId(String mailId) {
+        this.mailId = mailId;
     }
 
 }
