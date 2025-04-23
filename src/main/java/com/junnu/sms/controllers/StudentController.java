@@ -30,6 +30,11 @@ public class StudentController {
         return student.updatePerformance(p);
     }
 
+    @GetMapping("/getStudentsBySection/{section}")
+    public List<Student> getStudentsBySec(@PathVariable String section){
+        return student.getStudentsBySection(section);
+    }
+
      @GetMapping("getStudent/{roll}")
     public ResponseEntity<?> getStudent(@PathVariable String roll){
         return student.getStudent(roll);   

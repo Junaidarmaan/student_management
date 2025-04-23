@@ -25,6 +25,17 @@ public class StudentService {
         return performance.findAll();
     }
 
+
+    public List<Student> getStudentsBySection(String section){
+        List<Student> students = getAllStudents();
+        List<Student> result = new ArrayList<>();
+        for(Student s : students){
+            if (s.getSection() == section) {
+                result.add(s);
+            }
+        }
+        return result;
+    }
     public void addStudent(String roll,String emailString){
         Student temp = new Student();
         temp.setRollNo(roll);

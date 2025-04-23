@@ -12,7 +12,8 @@ public class Student {
     String academicYear = "unknown";
     String branch = "unknown";
     String mobile = "unknown";
-    String mailId;
+    String mailId = "unknown";
+    String section = "unknown";
     public String getRollNo() {
         return rollNo;
     }
@@ -24,6 +25,12 @@ public class Student {
     }
     public void setName(String name) {
         this.name = name;
+    }
+    public String getAcademicYear() {
+        return academicYear;
+    }
+    public void setAcademicYear(String academicYear) {
+        this.academicYear = academicYear;
     }
     public String getBranch() {
         return branch;
@@ -37,17 +44,17 @@ public class Student {
     public void setMobile(String mobile) {
         this.mobile = mobile;
     }
-    public String getAcademicYear() {
-        return academicYear;
-    }
-    public void setAcademicYear(String academicYear) {
-        this.academicYear = academicYear;
-    }
     public String getMailId() {
         return mailId;
     }
     public void setMailId(String mailId) {
         this.mailId = mailId;
+    }
+    public String getSection() {
+        return section;
+    }
+    public void setSection(String section) {
+        this.section = section;
     }
 
 }
