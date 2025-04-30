@@ -1,7 +1,7 @@
-package com.example.demo.service;
+package com.junnu.sms.services;
 
-import com.example.demo.model.Teacher;
-import com.example.demo.repository.TeacherRepository;
+import com.junnu.sms.models.Teacher;
+import com.junnu.sms.repos.TeacherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,7 @@ public class TeacherService {
     public String verifyOrAddTeacher(Teacher teacher) {
         String username = teacher.getUsername();
 
-        if (!username.endsWith(".grietcollege.com")) {
+        if (!username.endsWith("grietcollege.com")) {
             return "Please use your college email ID (e.g., username@grietcollege.com)";
         }
 

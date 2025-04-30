@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.junnu.sms.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
